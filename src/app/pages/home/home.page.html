@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div>
+        <ion-icon name="book" size="icon"></ion-icon>
+        Liber
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p> Buscar por: </p>
+  <ion-input type="text" [(ngModel)]="pesquisa" placeholder="Pesquisar"></ion-input>
+  
+
+  <ion-card *ngFor="let livro of livros">
+    <img [src]="livro.capa"/>
+    <ion-card-header>
+      <ion-card-subtitle>{{livro.autor}}</ion-card-subtitle>
+      <ion-card-title class="titulo">
+        {{livro.titulo}}
+      </ion-card-title>
+      <ion-card-subtitle class="preco"> R${{livro.preco}} </ion-card-subtitle>
+      <div class="favorito">
+        <ion-icon name="{{iconeFavoritos}}" color="danger" size="large" (click)="adicionarFavorito('livro')"></ion-icon>
+      </div>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,53 @@
+ion-title ion-icon {
+    font-size: 1em;
+}
+
+ion-toolbar ion-title div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 2vw;
+}
+
+.titulo {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #02AD8B;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #AD650A;
+}
+
+.favorito {
+    margin: 2vh 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.promocao {
+    color: #FA1B2F;
+}
+
+.normal {
+    color:#AD650A;
+}
+
+ion-input{
+    border: solid 1px #02AD8B;
+    border-radius: 20px;
+    margin: 1vh 2vw 3vh;
+    width: auto;
+    --color: #02AD8B;
+}
+
+ion-content p {
+    margin: 2vh 3vw 0;
+    color: #02AD8B;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+}
